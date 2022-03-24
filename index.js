@@ -14,8 +14,9 @@ async function startQuestion() {
           "View All Roles",
           "View All Employees",
           "Add A Department",
+          "Add A Role",
+          "Add An Employee",
 
-          // Add other 4 required option from acceptance criteria
         ],
       },
     ])
@@ -86,8 +87,32 @@ async function addDepartment() {
   );
 }
 
+//write async role function. 
+//nest (function inside function) inquirer.prompt will be my function 
+//call the query inside the inquirer function 
+//think of questions in the outer function 
+//should be like inquirer then query then inquirer so three nested functions
+//query list of roles as choices for inquirer question
+
+async function addRole() {
+    var role = "";
+    await inquirer.prompt([
+        {
+            
+        }
+    ])
+    .then((res) => {
+        connection.query(
+            `SELECT * FROM DEPARTMENTS;`, function (err, res) {
+                console.log(res)
+            }
+        ) 
+    })
+}
+
+
 // Write Out all query functions Underneath here
 
-// write out update and delete things
+
 
 startQuestion();

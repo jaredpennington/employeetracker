@@ -18,20 +18,6 @@ INSERT INTO roles (title, salary, department_id) VALUES
     ('President', 180000, 4),
     ('Vice President', 160000, 4),
     ('prince engine', 1234543, 2);
-    
-
-
-    -- Next positions can go directly underneath just replace semicolon witha  comma
-
--- INSERT INTO
---   employees (first_name, last_name, role_id, manager_id)
--- VALUES
---   ('Jared', 'Pennington', 7, NULL),
---   ('Aaron', 'Cent', 8, 1),
---   ('Sam', 'Samuels', 2, NULL),
---   ('Carl', 'Carlson', 1, 3);
-
-
 
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
