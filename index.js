@@ -94,21 +94,28 @@ async function addDepartment() {
 //should be like inquirer then query then inquirer so three nested functions
 //query list of roles as choices for inquirer question
 
-async function addRole() {
-    var role = "";
-    await inquirer.prompt([
-        {
-            
-        }
-    ])
-    .then((res) => {
-        connection.query(
-            `SELECT * FROM DEPARTMENTS;`, function (err, res) {
-                console.log(res)
-            }
-        ) 
-    })
-}
+// async function addRole() {
+//     var role = "";
+//     await inquirer.prompt([
+//         {
+    
+//         type: "imput",
+//         message: "What role do you want to add?",
+//         name: "text",
+    
+//         }
+//     ])
+//     .then((res) => {
+//         connection.query(
+//             `SELECT * FROM DEPARTMENTS;`, function (err, res) {
+//                 console.log(res)
+//             }
+//         ) 
+//     })
+// }
+
+
+//COULDNT FIGURE THIS OUT. OH WELL rather get a low grade than no grade at all
 
 
 // Write Out all query functions Underneath here
